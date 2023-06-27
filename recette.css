@@ -1,3 +1,6 @@
+* {
+    overflow: auto;
+}
 
 body {
     background-color: #8ba1bb;
@@ -9,18 +12,20 @@ p.categorie {
     background-color: black;
     color: white;
     display: inline-block;
-    margin-top: 0px;
-    padding: 8px 18px;
+    margin-top: -15px;
     margin-bottom: 0;
+    padding: 8px 18px;
     font-weight: bold;
     font-size: 16px;
 }
 
 div.contenu {
     background-color: white;
-    margin: 0px 10% 80px 10%;
-    padding: 30px;
+    margin: 60px 10% 80px 10%;
+    padding: 0 30px 30px 30px;
     min-width: 350px;
+    box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.1);
+    overflow: visible;
 }
 
 h1 {
@@ -42,8 +47,9 @@ p.description {
 }
 
 div.categorie {
-    margin-bottom: -16px;
-    margin-top: 60px;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: visible;
 }
 
 div.ligne {
@@ -116,3 +122,28 @@ div.ingredients p {
     margin-top: 4px;
     margin-bottom: 0;
 }  
+
+table.preparations p.numbers {
+    border-radius: 50%;
+    color: white;
+    background-color: #6c829d;
+    width: 25px;
+    text-align: center;
+    height: 25px;
+    margin: 0;
+    padding-top: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+table.preparations td.preparation_etape {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 12px;
+}
+
+table.preparations tr {
+    height: 40px;
+    vertical-align: top;
+}
