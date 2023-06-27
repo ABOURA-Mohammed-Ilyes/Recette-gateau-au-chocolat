@@ -67,8 +67,12 @@ table.info {
     height: 80px;
 }
 
-img.centre {
+img.info {
     display: block;
+    max-height: 400px;
+    object-fit: cover;
+    min-height: 200px;
+    background-color: lightgray;
 }
 
 table.info td {
