@@ -21,9 +21,8 @@ p.categorie {
 
 div.contenu {
     background-color: white;
-    margin: 60px 10% 80px 10%;
-    padding: 0 30px 30px 30px;
-    min-width: 350px;
+    margin: 40px 8px 40px 8px;
+    padding: 0 8px 20px 8px;
     box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.1);
     overflow: visible;
 }
@@ -70,7 +69,7 @@ table.info {
     width: 100%;
     background-color: #6c829dc0;
     color : white;
-    height: 80px;
+    height: 50px;
 }
 
 img.info {
@@ -83,17 +82,18 @@ img.info {
 
 table.info td {
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     vertical-align: top;
 }
 
 table.info th {
     vertical-align: bottom;
+    font-size: 14px;
     padding-bottom: 8px;
 }
 
 div.colonne {
-    width: 45%;
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -107,11 +107,6 @@ div.colonne h2 {
 
 div.ingredient {
     display : inline-block; 
-    margin-right: 10%;
-}
-
-div.preparation {
-    float: right;
 }
 
 div.ingredients p {
@@ -146,4 +141,47 @@ table.preparations td.preparation_etape {
 table.preparations tr {
     height: 40px;
     vertical-align: top;
+}
+
+@media only screen and (min-width: 768px) {
+    div.contenu{
+        min-width:  350px;
+        margin: 60px 10% 80px 10%;
+        padding: 0 30px 30px 30px;
+    }
+
+    table.info {
+        height: 80px;
+    }
+    
+    
+    table.info td {
+        font-size: 14px;
+    }
+    
+    table.info th {
+        font-size: 14px;
+    }
+
+    div.colonne {
+        width: 45%;
+        margin-top: 20px;
+    }
+    
+    
+    div.ingredient {
+        margin-right: 10%;
+    }
+    
+    div.preparation {
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    div.contenu{
+        margin-left: auto;
+        margin-right: auto;
+        width: 645px;
+    }
 }
